@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+
+@theme {
+  --color-primray: #ef945c;
+  --color-secondary: #c7a2c7;
+  --color-blaze-orange: #f86304;
+  --color-neon-carrot: #fba23c;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
