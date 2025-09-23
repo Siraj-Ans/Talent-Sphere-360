@@ -1,0 +1,4 @@
+Maybe add captcha in contact us form for security
+
+
+Also do add footer in every page

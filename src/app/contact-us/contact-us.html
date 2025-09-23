@@ -1,1 +1,359 @@
-<p>contact-us works!</p>
+<div class="h-full">
+  <section class="relative flex flex-col items-center">
+    <div class="absolute text-center top-10">
+      <h1
+        class="text-2xl leading-relaxed text-primray font-bold md:text-3xl lg:text-4xl xl:text-5xl"
+      >
+        Contact us
+      </h1>
+      <div class="relative flex items-center justify-center">
+        <p class="text-base md:text-lg lg:text-xl xl:text-2xl text-white w-3/4 md:w-1/2">
+          Got a technical issue? Need details about our Business plan? Let us know.
+        </p>
+      </div>
+    </div>
+    <img
+      class="bg-cover object-cover top-0 w-full h-[500px]"
+      src="assets/pexels-cottonbro-4065864.jpg"
+      alt="contact-us image"
+    />
+    <div class="absolute inset-0 bg-black/20"></div>
+    <div class="absolute w-full top-40 md:top-60 flex justify-center">
+      <form
+        ngNoForm
+        action="https://api.web3forms.com/submit"
+        method="post"
+        class="absolute border border-gray-200 drop-shadow-xl flex flex-wrap gap-4 bg-white rounded-md p-6 w-5/6 md:w-1/2 mx-auto"
+      >
+        <input type="hidden" name="access_key" value="3601cd7a-e71c-40e3-ba5b-07e679bafb8b" />
+        <input type="hidden" name="subject" value="talentsphere360 Contact Form" />
+        <div class="sm:basis-[calc(50%-0.5rem)]">
+          <label for="firstName" class="block mb-2 text-sm font-medium text-gray-900"
+            >First Name <span class="text-red-500">*</span></label
+          >
+          <input
+            id="firstName"
+            type="text"
+            name="firstName"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            placeholder="Bonnie"
+            [(ngModel)]="firstName"
+            required
+          />
+        </div>
+        <div class="sm:basis-[calc(50%-0.5rem)]">
+          <label for="lastName" class="block mb-2 text-sm font-medium text-gray-900"
+            >Last Name <span class="text-red-500">*</span></label
+          >
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            placeholder="Green"
+            [(ngModel)]="lastName"
+            required
+          />
+        </div>
+        <div class="sm:basis-[calc(50%-0.5rem)]">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900"
+            >Your email <span class="text-red-500">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            placeholder="name@gmail.com"
+            [(ngModel)]="email"
+            required
+          />
+        </div>
+        <div class="sm:basis-[calc(50%-0.5rem)]">
+          <label for="phoneNo" class="block mb-2 text-sm font-medium text-gray-900"
+            >Phone Number <span class="text-red-500">*</span></label
+          >
+          <input
+            type="text"
+            id="phoneNo"
+            name="phoneNo"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 border placeholder-gray-500 border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            placeholder="+92 0002223334"
+            [(ngModel)]="phoneNo"
+            required
+          />
+        </div>
+
+        <div class="sm:basis-[calc(50%-0.5rem)]">
+          <label for="organization" class="block mb-2 text-sm font-medium text-gray-900"
+            >Organization Name <span class="text-red-500">*</span></label
+          >
+          <input
+            type="text"
+            id="organization"
+            name="organization"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            placeholder="Enter your organization name"
+            [(ngModel)]="organization"
+            required
+          />
+        </div>
+        <div class="sm:basis-[calc(50%-0.5rem)]">
+          <label for="designation" class="block mb-2 text-sm font-medium text-gray-900"
+            >Designation <span class="text-red-500">*</span></label
+          >
+          <input
+            type="text"
+            id="designation"
+            name="designation"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            placeholder="Enter your designation (e.g., HR Manager)"
+            [(ngModel)]="designation"
+            required
+          />
+        </div>
+        <div class="sm:basis-[calc(50%-0.5rem)]">
+          <label for="noOfEmployees" class="block mb-2 text-sm font-medium text-gray-900"
+            >No Of Employees <span class="text-red-500">*</span></label
+          >
+          <input
+            type="number"
+            id="noOfEmployees"
+            name="noOfEmployees"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            placeholder="No Of Employees"
+            [(ngModel)]="noOfEmployees"
+            required
+          />
+        </div>
+        <div class="sm:basis-[calc(50%-0.5rem)]">
+          <label for="country" class="block mb-2 text-sm font-medium text-gray-900"
+            >Country <span class="text-red-500">*</span></label
+          >
+          <input
+            type="text"
+            name="country"
+            id="country"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            placeholder="Enter Your Country"
+            [(ngModel)]="country"
+            required
+          />
+        </div>
+        <div class="sm:basis-[calc(50%-0.5rem)]">
+          <label for="city" class="block mb-2 text-sm font-medium text-gray-900"
+            >City <span class="text-red-500">*</span></label
+          >
+          <input
+            type="text"
+            id="city"
+            name="city"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            placeholder="Enter Your City"
+            [(ngModel)]="city"
+            required
+          />
+        </div>
+        <div class="sm:basis-[calc(50%-0.5rem)]">
+          <label for="message" class="block mb- 2 text-sm font-medium text-gray-900">Message</label>
+          <textarea
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            id="message"
+            placeholder="Comments/queires"
+            name="message"
+            [(ngModel)]="message"
+          ></textarea>
+        </div>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+        <button
+          (click)="onClick()"
+          type="submit"
+          class="text-white cursor-pointer hover:from-primray hover:via-neon-carrot hover:to-primray bg-gradient-to-r from-blaze-orange via-neon-carrot to-blaze-orange focus:ring-4 focus:ring-neon-carrot font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </section>
+  <section class="flex flex-col gap-10 md:gap-0 md:flex-row py-60 md:py-96 px-3">
+    <div class="flex px-4 md:w-1/3 text-center flex-col items-center">
+      <img class="w-16 mb-5" src="assets/Icons/reshot-icon-email-C4XDB2TAEM.svg" alt="Email Icon" />
+
+      <p class="text-xl leading-relaxed font-medium">Email Us:</p>
+      <p class="text-base w-3/4 md:w-full text-gray-500">
+        Email us for general queries, including marketing and partnership opportunities.
+      </p>
+      <a
+        href="mailto:info@talentsphere.net"
+        class="text-base hover:underline text-primray mt-4 font-medium"
+        >info@talentsphere360.net</a
+      >
+    </div>
+    <div class="flex px-4 md:w-1/3 text-center flex-col items-center">
+      <img
+        class="w-16 mb-5"
+        src="assets/Icons/reshot-icon-call-forwarding-VMJPS3B48T.svg"
+        alt="Call Icon"
+      />
+      <p class="text-xl leading-relaxed font-bold">Call Us:</p>
+      <p class="text-base w-3/4 md:w-full text-gray-500">
+        Call us to speak to a member of our team. We are always happy to help.
+      </p>
+      <a href="tel:+923111666243" class="text-base hover:underline text-primray mt-4 font-medium"
+        >+92 311 1666243</a
+      >
+    </div>
+    <div class="flex px-4 md:w-1/3 text-center flex-col items-center">
+      <img
+        class="w-16 mb-5"
+        src="assets/Icons/reshot-icon-whatsapp-UANBKF398R.svg"
+        alt="Whatsapp Icon"
+      />
+      <p class="text-xl leading-relaxed font-medium">Message Us:</p>
+      <p class="text-base w-3/4 md:w-full text-gray-500">
+        Contact us on whatsapp. Chat with us on WhatsApp for quick queries or support — we’re just a
+        message away.
+      </p>
+      <a
+        href="https://wa.me/923312856362"
+        target="_blank"
+        class="text-white cursor-pointer hover:from-green-700 hover:via-green-500 hover:to-green-700 bg-gradient-to-r from-green-500 via-gray-250 to-gray-500 focus:ring-4 focus:ring-green-500 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+      >
+        WhatsApp
+      </a>
+    </div>
+  </section>
+  <div class="rotate-[-79.7] overflow-hidden"></div>
+  <footer
+    class="flex flex-col md:flex-row gap-10 px-6 py-14 bg-[radial-gradient(ellipse_at_60%_40%,_#F99F44_0%,_#F75E00_100%)]"
+  >
+    <section class="flex flex-col text-left w-full md:w-2/5 gap-5">
+      <a routerLink="/home">
+        <img class="w-36" src="assets/logo/TalenSphere360 Logo.svg" alt="TalenSphere360 Logo" />
+      </a>
+      <p class="text-base leading-relaxed w-3/4 md:w-11/12 text-white">
+        TalentSphere360 is a Pakistan-based HR consultancy serving clients locally and globally. We
+        specialize in building agile, customized HR solutions for startups, SMEs, nonprofits, and
+        corporates. From laying HR foundations to developing leadership pipelines, we bring deep
+        expertise and a people-first mindset to every engagement. Our name reflects our holistic
+        approach: 360-degree HR support that integrates Talent, Purpose, and Performance.
+      </p>
+    </section>
+    <section class="flex text-left flex-col w-full md:w-1/5 gap-5">
+      <h3 class="text-base md:text-lg font-medium lg:text-xl xl:text-2xl">Quick Links</h3>
+
+      <ul>
+        <li class="mb-3 hover:underline">
+          <a
+            routerLink="/about-us"
+            class="flex items-center gap-4 text-base cursor-pointer text-white hover:text-gray-900"
+            ><img
+              class="w-7"
+              src="assets/Icons/reshot-icon-talk-about-work-PWBYE6HGKT.svg"
+              alt="About-us Icon"
+            />
+            About Us</a
+          >
+        </li>
+        <li class="hover:underline">
+          <a
+            href="https://x.com/talentsphere360"
+            class="flex items-center gap-4 mb-3 text-base text-white hover:text-gray-900"
+            ><img
+              class="w-7"
+              src="assets/Icons/reshot-icon-twitter-4EAXDHGYM5.svg"
+              alt="Twitter Icon"
+            />
+            X(Twitter)</a
+          >
+        </li>
+        <li class="hover:underline">
+          <a
+            href="https://youtube.com/@talentsphere360?si=_8ENoKdtJbSgofd5"
+            class="flex items-center mb-3 text-base text-white gap-4"
+            ><img
+              class="w-7"
+              src="assets/Icons/reshot-icon-youtube-JH9UE452SM.svg"
+              alt="Youtube Icon"
+            />
+            Youtube</a
+          >
+        </li>
+        <li class="hover:underline">
+          <a
+            href="https://www.linkedin.com/posts/talentsphere-360_talentsphere360-talenttalks-balochistan-activity-7374405784971067392-fChA"
+            class="flex items-center mb-3 text-base text-white hover:text-gray-900 gap-4"
+            ><img
+              class="w-7"
+              src="assets/Icons/reshot-icon-linkedin-G7YJ8FXBKT.svg"
+              alt="LinkedIn Icon"
+            />
+            LinkedIn</a
+          >
+        </li>
+        <li class="hover:underline">
+          <a
+            href="https://www.instagram.com/talentsphere360/"
+            class="flex items-center mb-3 text-base text-white hover:text-gray-900 gap-4"
+            ><img
+              class="w-7"
+              src="assets/Icons/reshot-icon-instagram-M2ZK3USTWR.svg"
+              alt="Instagram Icon"
+            />
+            Instagram</a
+          >
+        </li>
+        <li class="hover:underline">
+          <a
+            href="https://www.facebook.com/share/16fXR35iYX/"
+            class="flex items-center mb-3 gap-4 text-base text-white hover:text-gray-900"
+            ><img
+              class="w-7"
+              src="assets/Icons/reshot-icon-facebook-square-GCAE9R73J5.svg"
+              alt="Facebook Icon"
+            />
+            Facebook</a
+          >
+        </li>
+      </ul>
+    </section>
+    <section class="flex text-left flex-col w-full md:w-1/5 gap-5">
+      <h3 class="text-base md:text-lg font-medium lg:text-xl xl:text-2xl">Out Partners</h3>
+      <ul>
+        <li class="mb-2">
+          <a href="" class="text-base text-white hover:text-gray-900 hover:underline"
+            >XILIKE[XIAMEN] CONSULTANCY PVT.LTD. - CHINA</a
+          >
+        </li>
+        <li class="mb-2">
+          <a
+            href="https://www.instagram.com/ramenstation_rwp/"
+            class="text-base text-white hover:text-gray-900 hover:underline"
+            >Rammen Station - Rawalpindi</a
+          >
+        </li>
+        <li class="mb-2">
+          <a href="" class="text-base text-white hover:text-gray-900 hover:underline"
+            >De Aesthetics</a
+          >
+        </li>
+      </ul>
+    </section>
+    <section class="flex text-left flex-col w-full md:w-1/5 gap-5">
+      <h3 class="text-base leading-relaxed md:text-lg font-medium lg:text-xl xl:text-2xl">
+        Contact Us
+      </h3>
+      <li>
+        📍
+
+        <a
+          href="https://www.google.com/maps?q=Plot+123,+Business+Avenue,+Karachi,+Pakistan"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-base text-white hover:text-gray-900 hover:underline"
+          >Second Floor, Select One Plaza, F-11 Markaz, Islamabad</a
+        >
+      </li>
+    </section>
+  </footer>
+</div>
