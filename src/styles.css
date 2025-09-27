@@ -2,9 +2,9 @@
 
 @theme {
   --color-primray: #f75e00;
-  --color-secondary: #8c5289;
-  --color-blaze-orange: #f99f44;
-  --color-neon-carrot: #f75e00;
+  --color-secondary: #3c0366;
+  --color-button1-blaze-jafa: #f99f44;
+  --color-button1-Tapestry: #b35288;
 }
 
 html,
@@ -13,7 +13,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-family: 'ITCAvantGardeStdMd', sans-serif;
 }
 
 /* 

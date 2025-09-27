@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { Footer } from '../shared/footer/footer';
 
 @Component({
   selector: 'app-gallery',
-  imports: [],
+  imports: [Footer],
   templateUrl: './gallery.html',
-  styleUrl: './gallery.css'
+  styleUrl: './gallery.css',
 })
-export class Gallery {
-
-}
+export class Gallery {}

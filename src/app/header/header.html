@@ -1,39 +1,37 @@
-<div class="rotate-[-79.7]">
-  <nav class="rounded-md">
-    <ul
-      class="flex flex-row justify-between px-6 py-3 bg-[radial-gradient(ellipse_at_60%_40%,_#F99F44_0%,_#F75E00_100%)]"
-    >
-      <a routerLink="home">
-        <img class="w-24" src="assets/logo/TalenSphere360 Logo.svg" alt="TalenSphere360 Logo" />
+<nav class="rounded-md">
+  <ul
+    class="flex flex-row justify-between px-6 py-3 bg-[radial-gradient(ellipse_at_center,_#F99F44_0%,_#F75E00_100%)]"
+  >
+    <a routerLink="home">
+      <img class="w-24" src="assets/logo/TalenSphere360 Logo.svg" alt="TalenSphere360 Logo" />
+    </a>
+
+    <div class="hidden items-center lg:flex flex-row gap-4">
+      <a routerLink="home" class="text-white" routerLinkActive="selected">
+        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Home</li></a
+      >
+      <a routerLink="about-us" class="text-white" routerLinkActive="selected">
+        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">About Us</li></a
+      >
+      <a routerLink="podcast" class="text-white" routerLinkActive="selected">
+        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Podcast</li></a
+      >
+      <a routerLink="jobs" class="text-white" routerLinkActive="selected">
+        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Jobs</li></a
+      >
+      <a routerLink="services" class="text-white" routerLinkActive="selected">
+        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Services</li>
       </a>
+      <a routerLink="gallery" class="text-white" routerLinkActive="selected">
+        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Gallery</li></a
+      >
+      <a routerLink="contact-us" class="text-white" routerLinkActive="selected text-secondary">
+        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Contact Us</li>
+      </a>
+    </div>
 
-      <div class="hidden items-center lg:flex flex-row gap-4">
-        <a routerLink="home" class="text-white" routerLinkActive="selected">
-          <li class="text-xs md:text-sm lg:text-base xl:text-lg">Home</li></a
-        >
-        <a routerLink="about-us" class="text-white" routerLinkActive="selected">
-          <li class="text-xs md:text-sm lg:text-base xl:text-lg">About Us</li></a
-        >
-        <a routerLink="podcast" class="text-white" routerLinkActive="selected">
-          <li class="text-xs md:text-sm lg:text-base xl:text-lg">Podcast</li></a
-        >
-        <a routerLink="jobs" class="text-white" routerLinkActive="selected">
-          <li class="text-xs md:text-sm lg:text-base xl:text-lg">Jobs</li></a
-        >
-        <a routerLink="services" class="text-white" routerLinkActive="selected">
-          <li class="text-xs md:text-sm lg:text-base xl:text-lg">Services</li>
-        </a>
-        <a routerLink="gallery" class="text-white" routerLinkActive="selected">
-          <li class="text-xs md:text-sm lg:text-base xl:text-lg">Gallery</li></a
-        >
-        <a routerLink="contact-us" class="text-white" routerLinkActive="selected">
-          <li class="text-xs md:text-sm lg:text-base xl:text-lg">Contact Us</li>
-        </a>
-      </div>
-
-      <button class="flex lg:hidden">
-        <span class="material-symbols-outlined"> menu </span>
-      </button>
-    </ul>
-  </nav>
-</div>
+    <button class="flex lg:hidden">
+      <span class="material-symbols-outlined"> menu </span>
+    </button>
+  </ul>
+</nav>

@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { Footer } from '../shared/footer/footer';
 
 @Component({
   selector: 'app-jobs',
-  imports: [],
+  imports: [Footer],
   templateUrl: './jobs.html',
-  styleUrl: './jobs.css'
+  styleUrl: './jobs.css',
 })
-export class Jobs {
-
-}
+export class Jobs {}
