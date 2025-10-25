@@ -1,5 +1,6 @@
 <div class="h-full">
   <section class="relative flex flex-col items-center">
+    <div class="absolute inset-0 bg-black/50"></div>
     <div class="absolute text-center top-10">
       <h1
         class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-relaxed text-primray font-bold"
@@ -7,7 +8,7 @@
         Contact us
       </h1>
       <div class="relative flex items-center justify-center">
-        <p class="text-base md:text-lg lg:text-xl xl:text-2xl text-white w-3/4 md:w-1/2">
+        <p class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-200 w-3/4 md:w-1/2">
           Got a technical issue? Need details about our Business plan? Let us know.
         </p>
       </div>
@@ -17,17 +18,16 @@
       src="assets/Images/pexels-cottonbro-4065864.jpg"
       alt="contact-us image"
     />
-    <div class="absolute inset-0 bg-black/20"></div>
-    <div class="absolute w-full top-40 md:top-60 flex justify-center">
+    <div class="absolute inset-x-0 mx-6 top-40 md:top-60 flex justify-center">
       <form
         ngNoForm
         action="https://api.web3forms.com/submit"
         method="post"
-        class="absolute border border-gray-200 drop-shadow-xl flex flex-wrap gap-4 bg-white rounded-md p-6 w-5/6 md:w-1/2 mx-auto"
+        class="absolute border border-gray-200 drop-shadow-xl flex flex-wrap gap-4 bg-white rounded-md p-6 w-full md:w-3/5 max-w-3xl"
       >
         <input type="hidden" name="access_key" value="3601cd7a-e71c-40e3-ba5b-07e679bafb8b" />
         <input type="hidden" name="subject" value="talentsphere360 Contact Form" />
-        <div class="sm:basis-[calc(50%-0.5rem)]">
+        <div class="basis-full md:basis-[calc(50%-0.5rem)]">
           <label for="firstName" class="block mb-2 text-sm font-medium text-gray-900"
             >First Name <span class="text-red-500">*</span></label
           >
@@ -35,13 +35,13 @@
             id="firstName"
             type="text"
             name="firstName"
-            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full focus:ring-primray focus:ring-2 focus:outline-none"
             placeholder="Bonnie"
             [(ngModel)]="firstName"
             required
           />
         </div>
-        <div class="sm:basis-[calc(50%-0.5rem)]">
+        <div class="basis-full md:basis-[calc(50%-0.5rem)]">
           <label for="lastName" class="block mb-2 text-sm font-medium text-gray-900"
             >Last Name <span class="text-red-500">*</span></label
           >
@@ -49,13 +49,13 @@
             type="text"
             id="lastName"
             name="lastName"
-            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full focus:ring-primray focus:ring-2 focus:outline-none"
             placeholder="Green"
             [(ngModel)]="lastName"
             required
           />
         </div>
-        <div class="sm:basis-[calc(50%-0.5rem)]">
+        <div class="basis-full md:basis-[calc(50%-0.5rem)]">
           <label for="email" class="block mb-2 text-sm font-medium text-gray-900"
             >Your email <span class="text-red-500">*</span></label
           >
@@ -63,13 +63,13 @@
             type="email"
             id="email"
             name="email"
-            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full focus:ring-primray focus:ring-2 focus:outline-none"
             placeholder="name@gmail.com"
             [(ngModel)]="email"
             required
           />
         </div>
-        <div class="sm:basis-[calc(50%-0.5rem)]">
+        <div class="basis-full md:basis-[calc(50%-0.5rem)]">
           <label for="phoneNo" class="block mb-2 text-sm font-medium text-gray-900"
             >Phone Number <span class="text-red-500">*</span></label
           >
@@ -77,14 +77,14 @@
             type="text"
             id="phoneNo"
             name="phoneNo"
-            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 border placeholder-gray-500 border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 border placeholder-gray-500 border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full focus:ring-primray focus:ring-2 focus:outline-none"
             placeholder="+92 0002223334"
             [(ngModel)]="phoneNo"
             required
           />
         </div>
 
-        <div class="sm:basis-[calc(50%-0.5rem)]">
+        <div class="basis-full md:basis-[calc(50%-0.5rem)]">
           <label for="organization" class="block mb-2 text-sm font-medium text-gray-900"
             >Organization Name <span class="text-red-500">*</span></label
           >
@@ -92,13 +92,13 @@
             type="text"
             id="organization"
             name="organization"
-            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full focus:ring-primray focus:ring-2 focus:outline-none"
             placeholder="Enter your organization name"
             [(ngModel)]="organization"
             required
           />
         </div>
-        <div class="sm:basis-[calc(50%-0.5rem)]">
+        <div class="basis-full md:basis-[calc(50%-0.5rem)]">
           <label for="designation" class="block mb-2 text-sm font-medium text-gray-900"
             >Designation <span class="text-red-500">*</span></label
           >
@@ -106,13 +106,13 @@
             type="text"
             id="designation"
             name="designation"
-            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full focus:ring-primray focus:ring-2 focus:outline-none"
             placeholder="Enter your designation (e.g., HR Manager)"
             [(ngModel)]="designation"
             required
           />
         </div>
-        <div class="sm:basis-[calc(50%-0.5rem)]">
+        <div class="basis-full md:basis-[calc(50%-0.5rem)]">
           <label for="noOfEmployees" class="block mb-2 text-sm font-medium text-gray-900"
             >No Of Employees <span class="text-red-500">*</span></label
           >
@@ -120,13 +120,13 @@
             type="number"
             id="noOfEmployees"
             name="noOfEmployees"
-            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full focus:ring-primray focus:ring-2 focus:outline-none"
             placeholder="No Of Employees"
             [(ngModel)]="noOfEmployees"
             required
           />
         </div>
-        <div class="sm:basis-[calc(50%-0.5rem)]">
+        <div class="basis-full md:basis-[calc(50%-0.5rem)]">
           <label for="country" class="block mb-2 text-sm font-medium text-gray-900"
             >Country <span class="text-red-500">*</span></label
           >
@@ -134,13 +134,13 @@
             type="text"
             name="country"
             id="country"
-            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full focus:ring-primray focus:ring-2 focus:outline-none"
             placeholder="Enter Your Country"
             [(ngModel)]="country"
             required
           />
         </div>
-        <div class="sm:basis-[calc(50%-0.5rem)]">
+        <div class="basis-full md:basis-[calc(50%-0.5rem)]">
           <label for="city" class="block mb-2 text-sm font-medium text-gray-900"
             >City <span class="text-red-500">*</span></label
           >
@@ -148,16 +148,16 @@
             type="text"
             id="city"
             name="city"
-            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full focus:ring-primray focus:ring-2 focus:outline-none"
             placeholder="Enter Your City"
             [(ngModel)]="city"
             required
           />
         </div>
-        <div class="sm:basis-[calc(50%-0.5rem)]">
+        <div class="basis-full md:basis-[calc(50%-0.5rem)]">
           <label for="message" class="block mb- 2 text-sm font-medium text-gray-900">Message</label>
           <textarea
-            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+            class="p-1.5 md:p-2.5 shadow-sm bg-gray-50 placeholder-gray-500 border border-gray-100 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full focus:ring-primray focus:ring-2 focus:outline-none"
             id="message"
             placeholder="Comments/queires"
             name="message"
@@ -175,18 +175,18 @@
       </form>
     </div>
   </section>
-  
-  <section class="flex flex-col gap-10 md:gap-0 md:flex-row py-60 md:py-96 px-3">
+
+  <section class="flex flex-col gap-10 md:gap-0 md:flex-row pb-60 mt-[600px] md:mt-[400px] px-3">
     <div class="flex px-4 md:w-1/3 text-center flex-col items-center">
       <img class="w-16 mb-5" src="assets/Icons/reshot-icon-email-C4XDB2TAEM.svg" alt="Email Icon" />
 
       <p class="text-xl leading-relaxed font-medium">Email Us:</p>
-      <p class="text-base w-3/4 md:w-full text-gray-500">
+      <p class="text-base w-10/12 md:w-full text-gray-500">
         Email us for general queries, including marketing and partnership opportunities.
       </p>
       <a
         href="mailto:info@talentsphere.net"
-        class="text-base hover:underline text-primray mt-4 font-medium"
+        class="text-base hover:underline text-primray mt-2 md:mt-4 font-medium"
         >info@talentsphere360.net</a
       >
     </div>
@@ -197,28 +197,30 @@
         alt="Call Icon"
       />
       <p class="text-xl leading-relaxed font-bold">Call Us:</p>
-      <p class="text-base w-3/4 md:w-full text-gray-500">
+      <p class="text-base w-10/12 md:w-full text-gray-500">
         Call us to speak to a member of our team. We are always happy to help.
       </p>
-      <a href="tel:+923111666243" class="text-base hover:underline text-primray mt-4 font-medium"
+      <a
+        href="tel:+923111666243"
+        class="text-base hover:underline text-primray mt-2 md:mt-4 font-medium"
         >+92 311 1666243</a
       >
     </div>
     <div class="flex px-4 md:w-1/3 text-center flex-col items-center">
       <img
-        class="w-16 mb-5"
+        class="w-16 mb-2 md:mb-5"
         src="assets/Icons/reshot-icon-whatsapp-UANBKF398R.svg"
         alt="Whatsapp Icon"
       />
       <p class="text-xl leading-relaxed font-medium">Message Us:</p>
-      <p class="text-base w-3/4 md:w-full text-gray-500">
+      <p class="text-base w-10/12 md:w-full text-gray-500">
         Contact us on whatsapp. Chat with us on WhatsApp for quick queries or support — we’re just a
         message away.
       </p>
       <a
         href="https://wa.me/923312856362"
         target="_blank"
-        class="text-white cursor-pointer bg-gradient-to-r from-green-500 via-gray-250 to-gray-500 focus:ring-4 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none focus:ring-green-500 hover:from-green-500 hover:via-green-500 hover:to-green-700"
+        class="text-white cursor-pointer bg-gradient-to-r from-green-500 via-gray-250 to-gray-500 focus:ring-4 font-medium rounded-md text-sm px-5 py-2.5 mb-2 focus:outline-none focus:ring-green-500 hover:from-green-500 hover:via-green-500 hover:to-green-700"
       >
         WhatsApp
       </a>
