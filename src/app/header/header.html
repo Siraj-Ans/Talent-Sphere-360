@@ -1,37 +1,73 @@
-<nav class="rounded-md">
-  <ul
-    class="flex flex-row justify-between px-6 py-3 bg-[radial-gradient(ellipse_at_center,_#F99F44_0%,_#F75E00_100%)]"
+<nav class="absolute top-0 left-0 z-20 w-full rounded-md">
+  <div
+    class="flex flex-row justify-between items-center px-6 py-3 bg-[radial-gradient(ellipse_at_center,_#F99F44_0%,_#F75E00_100%)]"
   >
-    <a routerLink="home">
-      <img class="w-24" src="assets/logo/TalenSphere360 Logo.svg" alt="TalenSphere360 Logo" />
+    <!-- Logo -->
+    <a routerLink="/home">
+      <img class="w-24" src="assets/logo/TalentSphere360(White).svg" alt="TalenSphere360 Logo" />
     </a>
 
-    <div class="hidden items-center lg:flex flex-row gap-4">
-      <a routerLink="home" class="text-white" routerLinkActive="selected">
-        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Home</li></a
+    <!-- Desktop Menu -->
+    <div class="hidden lg:flex flex-row gap-4 items-center text-white">
+      <a
+        routerLink="/home"
+        routerLinkActive="text-secondary"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary"
       >
-      <a routerLink="about-us" class="text-white" routerLinkActive="selected">
-        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">About Us</li></a
-      >
-      <a routerLink="podcast" class="text-white" routerLinkActive="selected">
-        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Podcast</li></a
-      >
-      <a routerLink="jobs" class="text-white" routerLinkActive="selected">
-        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Jobs</li></a
-      >
-      <a routerLink="services" class="text-white" routerLinkActive="selected">
-        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Services</li>
+        Home
       </a>
-      <a routerLink="gallery" class="text-white" routerLinkActive="selected">
-        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Gallery</li></a
+      <a
+        routerLink="/about-us"
+        routerLinkActive="text-secondary"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary"
       >
-      <a routerLink="contact-us" class="text-white" routerLinkActive="selected text-secondary">
-        <li class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary">Contact Us</li>
+        About Us
+      </a>
+      <a
+        routerLink="/services"
+        routerLinkActive="text-secondary"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary"
+      >
+        Services
+      </a>
+      <a
+        routerLink="/contact-us"
+        routerLinkActive="text-secondary"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary"
+      >
+        Contact Us
       </a>
     </div>
 
-    <button class="flex lg:hidden">
-      <span class="material-symbols-outlined"> menu </span>
+    <!-- Hamburger Button -->
+    <button class="flex lg:hidden text-white" (click)="toggleMenu()">
+      <span class="material-symbols-outlined">menu</span>
     </button>
-  </ul>
+  </div>
+
+  <!-- Mobile Slide Menu -->
+  <nav
+    class="lg:hidden fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-40"
+    [class.translate-x-0]="menuOpen"
+    [class.-translate-x-full]="!menuOpen"
+  >
+    <div class="flex flex-col p-6 gap-6 text-gray-800 text-lg font-medium mt-16">
+      <a routerLink="/home" (click)="closeMenu()" class="hover:text-orange-500">Home</a>
+      <a routerLink="/about-us" (click)="closeMenu()" class="hover:text-orange-500">About Us</a>
+      <a routerLink="/services" (click)="closeMenu()" class="hover:text-orange-500">Services</a>
+      <a routerLink="/contact-us" (click)="closeMenu()" class="hover:text-orange-500">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Overlay -->
+  @if (menuOpen) {
+  <div
+    (click)="closeMenu()"
+    class="fixed inset-0 bg-black/30 backdrop-blur-sm z-30 lg:hidden"
+  ></div>
+  }
 </nav>

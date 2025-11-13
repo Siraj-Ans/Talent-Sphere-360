@@ -12,6 +12,11 @@ html,
 body {
   height: 100%;
 }
+
+body.menu-open {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'ITCAvantGardeStdMd', sans-serif;

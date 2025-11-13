@@ -1,12 +1,14 @@
 <div class="relative w-full h-full overflow-hidden">
   <main class="hero-section relative z-10">
     <img
-      class="bg-cover w-full h-screen"
+      class="w-full bg-cover h-dvh"
       src="assets/Images/pexels-edmond-dantes-4342126.jpg"
       alt="Main Section Image"
     />
 
-    <div class="absolute mx-20 p-8 rounded-2xl top-36 bg-black/50 backdrop-blur-md">
+    <div
+      class="absolute mx-6 p-4 rounded-2xl bottom-20 bg-black/50 backdrop-blur-md lg:p-8 lg:mx-20"
+    >
       <p class="md:text-sm lg:text-base xl:text-lg text-white font-bold mb-3">About Us</p>
       <h1 class="text-2xl mb-6 md:text-3xl lg:text-4xl xl:text-5xl text-white font-bold">
         People-first HR for start-ups, NGOs & beyond
@@ -25,15 +27,26 @@
       </button>
     </div>
   </main>
-  <section class="flex relative z-20 bg-white py-16 px-20">
-    <div class="flex w-1/2 flex-col gap-5">
-      <!-- <img class="w-40 h-40" src="assets/logo/TalenSphere360 Logo.svg" alt="TalenSphere360 Logo" /> -->
-      <h1
+  <section
+    class="flex gap-16 flex-col lg:flex-row relative z-20 bg-white py-16 px-6 lg:px-20 lg:gap-0"
+  >
+    <div class="flex w-full lg:w-1/2 flex-col gap-10">
+      <a
+        class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-relaxed text-primray font-bold"
+        routerLink="/home"
+      >
+        <img
+          class="w-36"
+          src="assets/logo/TalentSphere360(Colored).svg"
+          alt="TalenSphere360 Logo"
+        />
+      </a>
+      <!-- <h1
         class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-relaxed text-primray font-bold"
       >
         TalenSphere360
-      </h1>
-      <p class="text-base w-3/4 text-gray-500">
+      </h1> -->
+      <p class="text-base w-full lg:w-3/4 text-gray-500">
         TalentSphere360 is a Pakistan-based HR consultancy helping organizations locally and
         globally build agile, people-first systems. We specialize in customized HR solutions for
         startups, SMEs, nonprofits, and corporates — from recruitment and HR foundations to
@@ -42,12 +55,12 @@
         people thrive, purpose drives progress, and performance sustains long-term success.
       </p>
     </div>
-    <div class="w-1/2">
+    <div class="w-full lg:w-1/2">
       <img class="rounded-md" src="assets/Images/DSC06892.JPG" alt="Main Image" />
     </div>
     <div></div>
   </section>
-  <section class="bg-white relative px-20 z-20 py-14">
+  <section class="bg-white relative px-6 z-20 py-7 lg:px-20">
     <div class="mb-16">
       <h1 class="text-2xl mb-6 md:text-3xl lg:text-4xl xl:text-5xl font-bold">
         Our
@@ -56,9 +69,9 @@
         >
       </h1>
 
-      <div class="relative rounded-3xl border-2 border-gray-300 w-full p-16">
+      <div class="relative rounded-3xl border-2 border-gray-300 w-full p-8 lg:p-16">
         <svg
-          class="absolute left-11/12 top-0 -translate-x-1/2 -translate-y-1/2 w-28 h-28 transition duration-400 ease-in-out hover:fill-white"
+          class="absolute left-11/12 top-0 -translate-x-1/2 -translate-y-1/2 w-14 h-14 transition duration-400 ease-in-out hover:fill-white lg:w-28 lg:h-28"
           fill="#000000"
           version="1.1"
           id="Capa_1"
@@ -107,9 +120,9 @@
           >Vision</span
         >
       </h1>
-      <div class="relative rounded-3xl border-2 border-gray-300 w-full p-16">
+      <div class="relative rounded-3xl border-2 border-gray-300 w-full p-8 lg:p-16">
         <svg
-          class="absolute left-11/12 top-0 -translate-x-1/2 -translate-y-1/2 w-28 h-28 transition duration-400 ease-in-out hover:fill-white"
+          class="absolute left-11/12 top-0 -translate-x-1/2 -translate-y-1/2 w-14 h-14 transition duration-400 ease-in-out hover:fill-white lg:w-28 lg:h-28"
           fill="#000000"
           version="1.1"
           id="Capa_1"
@@ -157,7 +170,9 @@
       </div>
     </div>
   </section>
-  <section class="bg-[radial-gradient(circle_at_center,rgb(274,94,0)_0%,white_100%)]">
+  <section
+    class="bg-[radial-gradient(circle_at_center,rgb(274,94,0)_50%,white_100%)] lg:bg-[radial-gradient(circle_at_center,rgb(274,94,0)_50%,white_100%)]"
+  >
     <div class="flex flex-col py-14 items-center justify-between">
       <p class="md:text-sm lg:text-base xl:text-lg mb-7 text-white">OUR VALUES</p>
       <h1 class="text-2xl text-white mb-16 md:text-3xl lg:text-4xl xl:text-5xl font-bold">
@@ -167,17 +182,17 @@
         class="grid w-full gap-4 px-6 grid-cols-2 /* default: 2 per row */ md:grid-cols-3 /* at md: 3 per row */ lg:grid-cols-6 /* at lg+: auto-fit like flex-1 */"
       >
         <div
-          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+          class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
         >
           <img
-            src="assets/Icons/productivity-ability-talent-productive-svgrepo-com.svg"
+            src="assets/Icons/handshake.svg"
             alt="Talent Icon"
-            class="w-14 mx-auto mb-8 duration-500 group-hover:translate-y-2"
+            class="w-14 mx-auto mb-4 duration-500 group-hover:translate-y-2 lg:mb-8"
           />
           <div class="text-center">
             <h2 class="text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-2">
               <span class="text-primray">T</span> - <br />
-              Talent
+              Trust
             </h2>
             <p class="text-xs md:text-sm lg:text-base text-gray-600">
               Partnership grounded in honesty and dependibility.
@@ -185,12 +200,12 @@
           </div>
         </div>
         <div
-          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+          class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
         >
           <img
             src="assets/Icons/speed-ice-skater-svgrepo-com.svg"
             alt="Talent Icon"
-            class="w-14 mx-auto mb-8 duration-500 group-hover:translate-y-2"
+            class="w-14 mx-auto mb-4 duration-500 group-hover:translate-y-2 lg:mb-8"
           />
           <div class="text-center">
             <h2 class="text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-4">
@@ -204,12 +219,12 @@
         </div>
 
         <div
-          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+          class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
         >
           <img
             src="assets/Icons/open-book-svgrepo-com.svg"
             alt="Talent Icon"
-            class="w-14 mx-auto mb-8 duration-500 group-hover:translate-y-2"
+            class="w-14 mx-auto mb-4 duration-500 group-hover:translate-y-2 lg:mb-8"
           />
           <div class="text-center">
             <h2 class="text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-4">
@@ -222,12 +237,12 @@
           </div>
         </div>
         <div
-          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+          class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
         >
           <img
             src="assets/Icons/reconcile-help-empathy-forgive-svgrepo-com.svg"
             alt="Talent Icon"
-            class="w-14 mx-auto duration-500 mb-8 group-hover:translate-y-2"
+            class="w-14 mx-auto duration-500 mb-4 group-hover:translate-y-2 lg:mb-8"
           />
           <div class="text-center">
             <h2 class="text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-4">
@@ -240,12 +255,12 @@
           </div>
         </div>
         <div
-          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+          class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
         >
           <img
             src="assets/Icons/nature-conservation-svgrepo-com.svg"
             alt="Talent Icon"
-            class="w-14 mx-auto duration-500 mb-8 group-hover:translate-y-2"
+            class="w-14 mx-auto duration-500 mb-4 group-hover:translate-y-2 lg:mb-8"
           />
           <div class="text-center">
             <h2 class="text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-4">
@@ -258,12 +273,12 @@
           </div>
         </div>
         <div
-          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+          class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
         >
           <img
             src="assets/Icons/transparency-svgrepo-com.svg"
             alt="Talent Icon"
-            class="w-14 mx-auto mb-8 duration-500 group-hover:translate-y-2"
+            class="w-14 mx-auto mb-4 duration-500 group-hover:translate-y-2 lg:mb-8"
           />
           <div class="text-center">
             <h2 class="text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-4">
@@ -278,58 +293,71 @@
       </div>
     </div>
   </section>
-  <section class="flex py-16 px-6 gap-4">
-    <div class="drop-shadow-2xl group rounded-lg p-6 bg-gray-100 duration-500 hover:bg-[#f99f44]">
-      <img
-        src="assets/Icons/productivity-ability-talent-productive-svgrepo-com.svg"
-        alt="Talent Icon"
-        class="w-14 mx-auto mb-8 duration-500 group-hover:translate-y-2"
-      />
-      <div class="text-center">
-        <h2 class="text-sm mb-2 text-gray-600 md:text-base lg:text-lg xl:text-xl">
-          "The Sphere Partnership Plans look very flexible. Having different options for startups,
-          SMEs, and corporates makes it much easier to choose the right level of support."
-        </h2>
-        <p class="text-xs text-primray font-bold md:text-sm lg:text-base">
-          XILIKE[XIAMEN] CONSULTANCY PVT.LTD. - CHINA
-        </p>
-      </div>
-    </div>
-    <div class="group rounded-lg p-6 bg-gray-100 duration-500 hover:bg-[#f99f44]">
-      <a href="https://www.instagram.com/deaestheticlounge/">
-        <img
-          src="assets/Images/deaestheticlounge.jpg"
-          alt="Talent Icon"
-          class="w-14 rounded-full mx-auto mb-8 duration-500 group-hover:translate-y-2"
-        />
-      </a>
-      <div class="text-center">
-        <h2 class="text-sm text-gray-600 mb-2 md:text-base lg:text-lg xl:text-xl">
-          "I like how your TALENT values are not just words but seem built into your approach.
-          Transparency and empathy really stand out to me as unique."
-        </h2>
-        <p class="text-xs text-primray font-bold md:text-sm lg:text-base">De Aesthetics</p>
-      </div>
-    </div>
-    <div class="group rounded-lg p-6 bg-gray-100 duration-500 hover:bg-[#f99f44]">
-      <a href="https://www.instagram.com/ramenstation_rwp/">
-        <img
-          src="assets/Images/Rammen Station.jpg"
-          alt="Talent Icon"
-          class="w-14 rounded-full mx-auto mb-8 duration-500 group-hover:translate-y-2"
-        />
-      </a>
+  <section class="relative flex items-center py-16 px-6">
+    <!-- Left Arrow -->
+    <button
+      (click)="scrollLeft()"
+      class="absolute left-2 z-10 p-2 bg-gray-200 rounded-full shadow hover:bg-gray-300"
+      aria-label="Scroll left"
+    >
+      &#10094;
+    </button>
 
-      <div class="text-center">
-        <h2 class="text-sm mb-2 md:text-base text-gray-600 lg:text-lg xl:text-xl">
-          "Really impressed with the clarity of your services! The way you’ve aligned HR with
-          purpose-driven growth is exactly what many businesses need today."
-        </h2>
-        <p class="text-xs text-primray font-bold md:text-sm lg:text-base">
-          Rammen Station - Rawalpindi
-        </p>
+    <!-- Scrollable Container -->
+    <div
+      #carousel
+      class="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory"
+    >
+      @for(item of carouselItems; track item.alt) {
+      <div
+        class="snap-start flex-shrink-0 w-80 md:w-96 group rounded-lg p-6 bg-gray-100 duration-500 hover:bg-[#f99f44]"
+      >
+        <a [href]="item.url">
+          <img
+            [src]="item.image"
+            [alt]="item.alt"
+            class="w-14 rounded-full mx-auto mb-4 duration-500 group-hover:translate-y-2 lg:mb-8"
+          />
+        </a>
+
+        <div class="text-center">
+          <h2 class="text-sm mb-2 text-gray-600 md:text-base lg:text-lg xl:text-xl">
+            {{ item.text }}
+          </h2>
+          <p class="text-xs text-primray font-bold md:text-sm lg:text-base">
+            {{ item.author }}
+          </p>
+        </div>
+      </div>
+      }
+      <div
+        *ngFor="let item of carouselItems"
+        class="snap-start flex-shrink-0 w-80 md:w-96 drop-shadow-2xl group rounded-lg p-6 bg-gray-100 duration-500 hover:bg-[#f99f44]"
+      >
+        <img
+          [src]="item.image"
+          [alt]="item.alt"
+          class="w-14 rounded-full mx-auto mb-8 duration-500 group-hover:translate-y-2"
+        />
+        <div class="text-center">
+          <h2 class="text-sm mb-2 text-gray-600 md:text-base lg:text-lg xl:text-xl">
+            {{ item.text }}
+          </h2>
+          <p class="text-xs text-primray font-bold md:text-sm lg:text-base">
+            {{ item.author }}
+          </p>
+        </div>
       </div>
     </div>
+
+    <!-- Right Arrow -->
+    <button
+      (click)="scrollRight()"
+      class="absolute right-2 z-10 p-2 bg-gray-200 rounded-full shadow hover:bg-gray-300"
+      aria-label="Scroll right"
+    >
+      &#10095;
+    </button>
   </section>
 
   <app-footer class="relative z-20"></app-footer>
