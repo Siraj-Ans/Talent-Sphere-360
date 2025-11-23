@@ -21,7 +21,7 @@
       <button
         type="submit"
         routerLink="/contact-us"
-        class="text-xl md:text-2xl transition-colors duration-500 lg:text-3xl xl:text-4xl font-light md:px-6 px-4 py-2 md:py-4 rounded-4xl text-white cursor-pointer bg-linear-to-r from-button1-Tapestry to-button1-blaze-jafa focus:ring-4 focus:ring-button1-Tapestry focus:outline-none hover:from-primray hover:to-secondary"
+        class="text-xl duration-250 font-light px-4 py-2 rounded-4xl text-white cursor-pointer bg-linear-to-r from-button1-Tapestry to-button1-blaze-jafa focus:ring-4 focus:ring-button1-Tapestry focus:outline-none hover:scale-90 md:py-2 md:px-4 md:text-2xl lg:text-3xl xl:text-4xl"
       >
         Get in Touch
       </button>
@@ -41,11 +41,6 @@
           alt="TalenSphere360 Logo"
         />
       </a>
-      <!-- <h1
-        class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-relaxed text-primray font-bold"
-      >
-        TalenSphere360
-      </h1> -->
       <p class="text-base w-full lg:w-3/4 text-gray-500">
         TalentSphere360 is a Pakistan-based HR consultancy helping organizations locally and
         globally build agile, people-first systems. We specialize in customized HR solutions for
@@ -265,7 +260,7 @@
           <div class="text-center">
             <h2 class="text-sm md:text-base lg:text-lg xl:text-xl font-bold mb-4">
               <span class="text-primray">N</span> - <br />
-              Nature
+              Nurture
             </h2>
             <p class="text-xs md:text-sm lg:text-base text-gray-600">
               Unlocking potential for long-term performance.
@@ -293,11 +288,11 @@
       </div>
     </div>
   </section>
-  <section class="relative flex items-center py-16 px-6">
+  <section class="flex relative items-stretch py-16 px-6">
     <!-- Left Arrow -->
     <button
       (click)="scrollLeft()"
-      class="absolute left-2 z-10 p-2 bg-gray-200 rounded-full shadow hover:bg-gray-300"
+      class="absolute left-2 top-[42%] z-10 p-2 bg-gray-200 rounded-full shadow hover:bg-gray-300"
       aria-label="Scroll left"
     >
       &#10094;
@@ -306,54 +301,38 @@
     <!-- Scrollable Container -->
     <div
       #carousel
-      class="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory"
+      class="flex mx-auto gap-4 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory"
     >
       @for(item of carouselItems; track item.alt) {
       <div
-        class="snap-start flex-shrink-0 w-80 md:w-96 group rounded-lg p-6 bg-gray-100 duration-500 hover:bg-[#f99f44]"
+        class="flex flex-col justify-between text-center my-auto snap-start h-full flex-shrink-0 w-80 group rounded-lg p-6 bg-gray-100 duration-500 md:w-96 hover:bg-[#f99f44]"
       >
-        <a [href]="item.url">
-          <img
-            [src]="item.image"
-            [alt]="item.alt"
-            class="w-14 rounded-full mx-auto mb-4 duration-500 group-hover:translate-y-2 lg:mb-8"
-          />
-        </a>
-
-        <div class="text-center">
+        <div>
+          <a [href]="item.url">
+            <img
+              [src]="item.image"
+              [alt]="item.alt"
+              class="w-14 rounded-full mx-auto mb-4 duration-500 group-hover:translate-y-2 lg:mb-8"
+            />
+          </a>
           <h2 class="text-sm mb-2 text-gray-600 md:text-base lg:text-lg xl:text-xl">
             {{ item.text }}
           </h2>
+        </div>
+
+        <div>
           <p class="text-xs text-primray font-bold md:text-sm lg:text-base">
             {{ item.author }}
           </p>
         </div>
       </div>
       }
-      <div
-        *ngFor="let item of carouselItems"
-        class="snap-start flex-shrink-0 w-80 md:w-96 drop-shadow-2xl group rounded-lg p-6 bg-gray-100 duration-500 hover:bg-[#f99f44]"
-      >
-        <img
-          [src]="item.image"
-          [alt]="item.alt"
-          class="w-14 rounded-full mx-auto mb-8 duration-500 group-hover:translate-y-2"
-        />
-        <div class="text-center">
-          <h2 class="text-sm mb-2 text-gray-600 md:text-base lg:text-lg xl:text-xl">
-            {{ item.text }}
-          </h2>
-          <p class="text-xs text-primray font-bold md:text-sm lg:text-base">
-            {{ item.author }}
-          </p>
-        </div>
-      </div>
     </div>
 
     <!-- Right Arrow -->
     <button
       (click)="scrollRight()"
-      class="absolute right-2 z-10 p-2 bg-gray-200 rounded-full shadow hover:bg-gray-300"
+      class="absolute right-2 top-[42%] z-10 p-2 bg-gray-200 rounded-full shadow hover:bg-gray-300"
       aria-label="Scroll right"
     >
       &#10095;

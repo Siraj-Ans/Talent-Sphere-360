@@ -20,13 +20,24 @@ export class Services {
   noOfEmployees!: number;
   message?: string;
   services = [
-    { name: 'Talent Acquisition & Hiring', plans: ['Basic', 'Premium', 'Enterprise'] },
-    { name: 'Startup HR Support', plans: ['Launch', 'Growth', 'Scale'] },
-    { name: 'Learning & Development (L&D)', plans: ['Workshop', 'Leadership', 'Custom'] },
-    { name: 'Employee Engagement & Wellbeing', plans: ['Survey', 'Wellbeing+', 'Full Suite'] },
+    {
+      name: 'Talent Acquisition & Hiring',
+      plans: ['Sphere Basic', 'Sphere Growth', 'Sphere Elite', 'Custom'],
+    },
+    {
+      name: 'Startup HR Support',
+      plans: ['Sphere Basic', 'Sphere Growth', 'Sphere Elite', 'Custom'],
+    },
+    {
+      name: 'Learning & Development (L&D)',
+      plans: ['Sphere Basic', 'Sphere Growth', 'Sphere Elite', 'Custom'],
+    },
+    {
+      name: 'Employee Engagement & Wellbeing',
+      plans: ['Sphere Basic', 'Sphere Growth', 'Sphere Elite', 'Custom'],
+    },
   ];
 
-  plans = ['Sphere Basic', 'Sphere Growth', 'Sphere Elite', 'Custom'];
   selectedService: string | null = null;
   selectedPlan: string | null = null;
 

@@ -17,13 +17,6 @@ export class AboutUs implements AfterViewInit {
 
   carouselItems = [
     {
-      image: 'assets/Icons/productivity-ability-talent-productive-svgrepo-com.svg',
-      alt: 'Talent Icon',
-      url: '',
-      text: `"The Sphere Partnership Plans look very flexible. Having different options for startups, SMEs, and corporates makes it much easier to choose the right level of support."`,
-      author: 'XILIKE[XIAMEN] CONSULTANCY PVT.LTD. - CHINA',
-    },
-    {
       image: 'assets/Images/deaestheticlounge.jpg',
       alt: 'De Aesthetics',
       url: 'https://www.instagram.com/deaestheticlounge/',
@@ -36,6 +29,13 @@ export class AboutUs implements AfterViewInit {
       url: 'https://www.instagram.com/ramenstation_rwp/',
       text: `"Really impressed with the clarity of your services! The way you’ve aligned HR with purpose-driven growth is exactly what many businesses need today."`,
       author: 'Rammen Station - Rawalpindi',
+    },
+    {
+      image: 'assets/logo/Redon Logo.svg',
+      alt: 'Redon Films',
+      url: 'https://www.instagram.com/ramenstation_rwp/',
+      text: `"An excellent entry-level HR support system. Their monthly advisory calls and recruitment assistance helped us stabilize our early-stage operations."`,
+      author: 'Rednon Films',
     },
   ];
   scrollAmount = 320; // Adjust based on card width

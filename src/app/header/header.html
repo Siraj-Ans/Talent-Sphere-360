@@ -11,7 +11,7 @@
     <div class="hidden lg:flex flex-row gap-4 items-center text-white">
       <a
         routerLink="/home"
-        routerLinkActive="text-secondary"
+        routerLinkActive="from-primray to-secondary bg-clip-text text-transparent bg-gradient-to-r"
         [routerLinkActiveOptions]="{ exact: true }"
         class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary"
       >
@@ -19,7 +19,7 @@
       </a>
       <a
         routerLink="/about-us"
-        routerLinkActive="text-secondary"
+        routerLinkActive="from-primray to-secondary bg-clip-text text-transparent bg-gradient-to-r"
         [routerLinkActiveOptions]="{ exact: true }"
         class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary"
       >
@@ -27,7 +27,7 @@
       </a>
       <a
         routerLink="/services"
-        routerLinkActive="text-secondary"
+        routerLinkActive="from-primray to-secondary bg-clip-text text-transparent bg-gradient-to-r"
         [routerLinkActiveOptions]="{ exact: true }"
         class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary"
       >
@@ -35,7 +35,7 @@
       </a>
       <a
         routerLink="/contact-us"
-        routerLinkActive="text-secondary"
+        routerLinkActive="from-primray to-secondary bg-clip-text text-transparent bg-gradient-to-r"
         [routerLinkActiveOptions]="{ exact: true }"
         class="text-xs md:text-sm lg:text-base xl:text-lg hover:text-secondary"
       >
@@ -56,10 +56,38 @@
     [class.-translate-x-full]="!menuOpen"
   >
     <div class="flex flex-col p-6 gap-6 text-gray-800 text-lg font-medium mt-16">
-      <a routerLink="/home" (click)="closeMenu()" class="hover:text-orange-500">Home</a>
-      <a routerLink="/about-us" (click)="closeMenu()" class="hover:text-orange-500">About Us</a>
-      <a routerLink="/services" (click)="closeMenu()" class="hover:text-orange-500">Services</a>
-      <a routerLink="/contact-us" (click)="closeMenu()" class="hover:text-orange-500">Contact Us</a>
+      <a
+        routerLinkActive="underline"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/home"
+        (click)="closeMenu()"
+        class="hover:text-orange-500"
+        >Home</a
+      >
+      <a
+        routerLinkActive="underline"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/about-us"
+        (click)="closeMenu()"
+        class="hover:text-orange-500"
+        >About Us</a
+      >
+      <a
+        routerLinkActive="underline"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/services"
+        (click)="closeMenu()"
+        class="hover:text-orange-500"
+        >Services</a
+      >
+      <a
+        routerLinkActive="underline"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/contact-us"
+        (click)="closeMenu()"
+        class="hover:text-orange-500"
+        >Contact Us</a
+      >
     </div>
   </nav>
 
