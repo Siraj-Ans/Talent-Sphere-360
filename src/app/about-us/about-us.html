@@ -27,11 +27,17 @@
       </button>
     </div>
   </main>
+<<<<<<< HEAD
   <section
     class="flex gap-16 flex-col lg:flex-row relative z-20 bg-white py-16 px-6 lg:px-20 lg:gap-0"
   >
     <div class="flex w-full lg:w-1/2 flex-col gap-10">
       <a
+=======
+  <section class="flex relative z-20 bg-white py-16 px-20">
+    <div class="flex w-1/2 flex-col gap-5">
+      <h1
+>>>>>>> feat-podcast
         class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-relaxed text-primray font-bold"
         routerLink="/home"
       >
@@ -170,14 +176,22 @@
   >
     <div class="flex flex-col py-14 items-center justify-between">
       <p class="md:text-sm lg:text-base xl:text-lg mb-7 text-white">OUR VALUES</p>
+<<<<<<< HEAD
       <h1 class="text-2xl text-white mb-16 md:text-3xl lg:text-4xl xl:text-5xl font-bold">
+=======
+      <h1 class="text-2xl mb-16 md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white">
+>>>>>>> feat-podcast
         We Believe in Providing Values.
       </h1>
       <div
         class="grid w-full gap-4 px-6 grid-cols-2 /* default: 2 per row */ md:grid-cols-3 /* at md: 3 per row */ lg:grid-cols-6 /* at lg+: auto-fit like flex-1 */"
       >
         <div
+<<<<<<< HEAD
           class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
+=======
+          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+>>>>>>> feat-podcast
         >
           <img
             src="assets/Icons/handshake.svg"
@@ -195,7 +209,11 @@
           </div>
         </div>
         <div
+<<<<<<< HEAD
           class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
+=======
+          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+>>>>>>> feat-podcast
         >
           <img
             src="assets/Icons/speed-ice-skater-svgrepo-com.svg"
@@ -214,7 +232,11 @@
         </div>
 
         <div
+<<<<<<< HEAD
           class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
+=======
+          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+>>>>>>> feat-podcast
         >
           <img
             src="assets/Icons/open-book-svgrepo-com.svg"
@@ -232,7 +254,11 @@
           </div>
         </div>
         <div
+<<<<<<< HEAD
           class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
+=======
+          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+>>>>>>> feat-podcast
         >
           <img
             src="assets/Icons/reconcile-help-empathy-forgive-svgrepo-com.svg"
@@ -250,7 +276,11 @@
           </div>
         </div>
         <div
+<<<<<<< HEAD
           class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
+=======
+          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+>>>>>>> feat-podcast
         >
           <img
             src="assets/Icons/nature-conservation-svgrepo-com.svg"
@@ -268,7 +298,11 @@
           </div>
         </div>
         <div
+<<<<<<< HEAD
           class="cursor-pointer group rounded-lg p-3 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105 lg:p-6"
+=======
+          class="cursor-pointer group rounded-lg p-6 bg-white duration-500 hover:bg-[#f99f44] hover:scale-105"
+>>>>>>> feat-podcast
         >
           <img
             src="assets/Icons/transparency-svgrepo-com.svg"
@@ -288,6 +322,7 @@
       </div>
     </div>
   </section>
+<<<<<<< HEAD
   <section class="flex relative items-stretch py-16 px-6">
     <!-- Left Arrow -->
     <button
@@ -327,6 +362,58 @@
         </div>
       </div>
       }
+=======
+  <section class="relative flex py-16 px-6 overflow-hidden">
+    <div class="carousel-container w-full relative">
+      <!-- Prev Button -->
+      <button
+        class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white px-3 py-2 rounded-full"
+        (click)="prev()"
+        [disabled]="currentIndex === 0"
+      >
+        ‹
+      </button>
+
+      <!-- Carousel Wrapper -->
+      <div
+        class="carousel-wrapper flex gap-4 transition-transform duration-500 ease-out"
+        [style.transform]="'translateX(-' + currentIndex * itemWidth + 'px)'"
+        #carouselWrapper
+      >
+        @for(clientComment of clientComments; track clientComment.name) {
+
+        <div
+          class="w-5/12 carousel-item lex-shrink-0 drop-shadow-2xl group rounded-lg p-6 bg-gray-200 duration-500 hover:bg-[#f99f44]"
+        >
+          <a class="cursor-pointer" [href]="clientComment.link">
+            <img
+              [src]="clientComment.image"
+              alt="Talent Icon"
+              class="w-14 mx-auto mb-8 duration-500 group-hover:translate-y-2"
+            />
+          </a>
+          <div class="text-center">
+            <h2 class="text-sm mb-2 text-gray-600 md:text-base lg:text-lg xl:text-xl">
+              "{{ clientComment.comment }}"
+            </h2>
+            <p class="text-xs text-primray font-bold md:text-sm lg:text-base">
+              {{ clientComment.name }}
+            </p>
+          </div>
+        </div>
+
+        }
+      </div>
+
+      <!-- Next Button -->
+      <button
+        class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white px-3 py-2 rounded-full"
+        (click)="next()"
+        [disabled]="currentIndex >= clientComments.length - visibleItems"
+      >
+        ›
+      </button>
+>>>>>>> feat-podcast
     </div>
 
     <!-- Right Arrow -->
